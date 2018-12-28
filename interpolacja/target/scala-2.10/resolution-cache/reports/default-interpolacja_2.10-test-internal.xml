@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="default"
+		module="interpolacja_2.10"
+		revision="0.1"
+		conf="test-internal"
+		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool"
+		date="20181130213252"/>
+	<dependencies>
+		<module organisation="org.scala-lang" name="scala-reflect">
+			<revision name="2.10.2" status="release" pubdate="20130606200608" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.10.2/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="6">
+				<license name="BSD-like" url="http://www.scala-lang.org/downloads/license.html    "/>
+				<metadata-artifact status="no" details="" size="2835" time="0" location="/home/bartek/.ivy2/cache/org.scala-lang/scala-reflect/ivy-2.10.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.10.2/scala-reflect-2.10.2.pom"/>
+				<caller organisation="com.typesafe" name="scalalogging-log4j_2.10" conf="compile, runtime" rev="2.10.2" rev-constraint-default="2.10.2" rev-constraint-dynamic="2.10.2" callerrev="1.0.1"/>
+				<artifacts>
+					<artifact name="scala-reflect" type="jar" ext="jar" status="no" details="" size="3171168" time="0" location="/home/bartek/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.10.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.10.2/scala-reflect-2.10.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scalanlp" name="breeze-math_2.10">
+			<revision name="0.4" status="release" pubdate="20130730043550" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://scalanlp.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="1">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="3875" time="0" location="/home/bartek/.ivy2/cache/org.scalanlp/breeze-math_2.10/ivy-0.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scalanlp/breeze-math_2.10/0.4/breeze-math_2.10-0.4.pom"/>
+				<caller organisation="default" name="interpolacja_2.10" conf="test, compile, provided, test-internal, runtime, optional" rev="0.4" rev-constraint-default="0.4" rev-constraint-dynamic="0.4" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="breeze-math_2.10" type="jar" ext="jar" status="no" details="" size="4590933" time="0" location="/home/bartek/.ivy2/cache/org.scalanlp/breeze-math_2.10/jars/breeze-math_2.10-0.4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scalanlp/breeze-math_2.10/0.4/breeze-math_2.10-0.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.github.rwl" name="jtransforms">
+			<revision name="2.4.0" status="release" pubdate="20120519160656" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://sourceforge.net/projects/jtransforms/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="13">
+				<license name="MPL" url="http://www.mozilla.org/MPL/2.0/index.txt"/>
+				<license name="LGPL" url="http://www.gnu.org/licenses/lgpl-2.1.txt"/>
+				<license name="GPL" url="http://www.gnu.org/licenses/gpl-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2991" time="0" location="/home/bartek/.ivy2/cache/com.github.rwl/jtransforms/ivy-2.4.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/github/rwl/jtransforms/2.4.0/jtransforms-2.4.0.pom"/>
+				<caller organisation="org.scalanlp" name="breeze-math_2.10" conf="default, compile, runtime, master" rev="2.4.0" rev-constraint-default="2.4.0" rev-constraint-dynamic="2.4.0" callerrev="0.4"/>
+				<artifacts>
+					<artifact name="jtransforms" type="jar" ext="jar" status="no" details="" size="764569" time="0" location="/home/bartek/.ivy2/cache/com.github.rwl/jtransforms/jars/jtransforms-2.4.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/github/rwl/jtransforms/2.4.0/jtransforms-2.4.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="junit" name="junit">
+			<revision name="4.8.2" status="release" pubdate="20101005105127" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://junit.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="14">
+				<license name="Common Public License Version 1.0" url="http://www.opensource.org/licenses/cpl1.0.txt"/>
+				<metadata-artifact status="no" details="" size="2546" time="0" location="/home/bartek/.ivy2/cache/junit/junit/ivy-4.8.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/junit/junit/4.8.2/junit-4.8.2.pom"/>
+				<caller organisation="com.github.rwl" name="jtransforms" conf="compile, runtime" rev="4.8.2" rev-constraint-default="4.8.2" rev-constraint-dynamic="4.8.2" callerrev="2.4.0"/>
+				<artifacts>
+					<artifact name="junit" type="jar" ext="jar" status="no" details="" size="237344" time="0" location="/home/bartek/.ivy2/cache/junit/junit/jars/junit-4.8.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/junit/junit/4.8.2/junit-4.8.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.commons" name="commons-math3">
+			<revision name="3.2" status="release" pubdate="20130402213128" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/proper/commons-math/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="12">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="9676" time="0" location="/home/bartek/.ivy2/cache/org.apache.commons/commons-math3/ivy-3.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/commons/commons-math3/3.2/commons-math3-3.2.pom"/>
+				<caller organisation="org.scalanlp" name="breeze-math_2.10" conf="default, compile, runtime, master" rev="3.2" rev-constraint-default="3.2" rev-constraint-dynamic="3.2" callerrev="0.4"/>
+				<artifacts>
+					<artifact name="commons-math3" type="jar" ext="jar" status="no" details="" size="1692782" time="0" location="/home/bartek/.ivy2/cache/org.apache.commons/commons-math3/jars/commons-math3-3.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.jblas" name="jblas">
+			<revision name="1.2.3" status="release" pubdate="20130213152349" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://jblas.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="11">
+				<license name="BSD 3-clause style license" url="http://opensource.org/licenses/BSD-3-Clause"/>
+				<metadata-artifact status="no" details="" size="3252" time="0" location="/home/bartek/.ivy2/cache/org.jblas/jblas/ivy-1.2.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/jblas/jblas/1.2.3/jblas-1.2.3.pom"/>
+				<caller organisation="org.scalanlp" name="breeze-math_2.10" conf="default, compile, runtime, master" rev="1.2.3" rev-constraint-default="1.2.3" rev-constraint-dynamic="1.2.3" callerrev="0.4"/>
+				<artifacts>
+					<artifact name="jblas" type="jar" ext="jar" status="no" details="" size="7487233" time="0" location="/home/bartek/.ivy2/cache/org.jblas/jblas/jars/jblas-1.2.3.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/jblas/jblas/1.2.3/jblas-1.2.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.googlecode.netlib-java" name="netlib-java">
+			<revision name="0.9.3" status="release" pubdate="20110830055531" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://code.google.com/p/netlib-java/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="9">
+				<license name="The BSD License" url="http://www.opensource.org/licenses/bsd-license.php"/>
+				<metadata-artifact status="no" details="" size="2754" time="0" location="/home/bartek/.ivy2/cache/com.googlecode.netlib-java/netlib-java/ivy-0.9.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/googlecode/netlib-java/netlib-java/0.9.3/netlib-java-0.9.3.pom"/>
+				<caller organisation="org.scalanlp" name="breeze-math_2.10" conf="default, compile, runtime, master" rev="0.9.3" rev-constraint-default="0.9.3" rev-constraint-dynamic="0.9.3" callerrev="0.4"/>
+				<artifacts>
+					<artifact name="netlib-java" type="jar" ext="jar" status="no" details="" size="131210" time="0" location="/home/bartek/.ivy2/cache/com.googlecode.netlib-java/netlib-java/jars/netlib-java-0.9.3.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/googlecode/netlib-java/netlib-java/0.9.3/netlib-java-0.9.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="net.sourceforge.f2j" name="arpack_combined_all">
+			<revision name="0.1" status="release" pubdate="20130709062740" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://f2j.sourceforge.net" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="10">
+				<license name="The BSD License" url="http://www.opensource.org/licenses/bsd-license.php"/>
+				<metadata-artifact status="no" details="" size="2567" time="0" location="/home/bartek/.ivy2/cache/net.sourceforge.f2j/arpack_combined_all/ivy-0.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/net/sourceforge/f2j/arpack_combined_all/0.1/arpack_combined_all-0.1.pom"/>
+				<caller organisation="com.googlecode.netlib-java" name="netlib-java" conf="compile, runtime" rev="0.1" rev-constraint-default="0.1" rev-constraint-dynamic="0.1" callerrev="0.9.3"/>
+				<artifacts>
+					<artifact name="arpack_combined_all" type="jar" ext="jar" status="no" details="" size="1194003" time="0" location="/home/bartek/.ivy2/cache/net.sourceforge.f2j/arpack_combined_all/jars/arpack_combined_all-0.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/net/sourceforge/f2j/arpack_combined_all/0.1/arpack_combined_all-0.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scalanlp" name="breeze-core_2.10">
+			<revision name="0.4" status="release" pubdate="20130730043515" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://scalanlp.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="2">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="3598" time="0" location="/home/bartek/.ivy2/cache/org.scalanlp/breeze-core_2.10/ivy-0.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scalanlp/breeze-core_2.10/0.4/breeze-core_2.10-0.4.pom"/>
+				<caller organisation="org.scalanlp" name="breeze-math_2.10" conf="default, compile, runtime, master" rev="0.4" rev-constraint-default="0.4" rev-constraint-dynamic="0.4" callerrev="0.4"/>
+				<artifacts>
+					<artifact name="breeze-core_2.10" type="jar" ext="jar" status="no" details="" size="774283" time="0" location="/home/bartek/.ivy2/cache/org.scalanlp/breeze-core_2.10/jars/breeze-core_2.10-0.4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scalanlp/breeze-core_2.10/0.4/breeze-core_2.10-0.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.logging.log4j" name="log4j-core">
+			<revision name="2.0-beta4" status="release" pubdate="20130128084727" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="7">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="10711" time="0" location="/home/bartek/.ivy2/cache/org.apache.logging.log4j/log4j-core/ivy-2.0-beta4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/logging/log4j/log4j-core/2.0-beta4/log4j-core-2.0-beta4.pom"/>
+				<caller organisation="org.scalanlp" name="breeze-core_2.10" conf="compile, runtime" rev="2.0-beta4" rev-constraint-default="2.0-beta4" rev-constraint-dynamic="2.0-beta4" callerrev="0.4"/>
+				<artifacts>
+					<artifact name="log4j-core" type="jar" ext="jar" status="no" details="" size="442001" time="0" location="/home/bartek/.ivy2/cache/org.apache.logging.log4j/log4j-core/jars/log4j-core-2.0-beta4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/logging/log4j/log4j-core/2.0-beta4/log4j-core-2.0-beta4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.logging.log4j" name="log4j-api">
+			<revision name="2.0-beta4" status="release" pubdate="20130128084529" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="8">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="8983" time="0" location="/home/bartek/.ivy2/cache/org.apache.logging.log4j/log4j-api/ivy-2.0-beta4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/logging/log4j/log4j-api/2.0-beta4/log4j-api-2.0-beta4.pom"/>
+				<caller organisation="org.apache.logging.log4j" name="log4j-core" conf="compile, runtime" rev="2.0-beta4" rev-constraint-default="2.0-beta4" rev-constraint-dynamic="2.0-beta4" callerrev="2.0-beta4"/>
+				<caller organisation="com.typesafe" name="scalalogging-log4j_2.10" conf="compile, runtime" rev="2.0-beta3" rev-constraint-default="2.0-beta3" rev-constraint-dynamic="2.0-beta3" callerrev="1.0.1"/>
+				<artifacts>
+					<artifact name="log4j-api" type="jar" ext="jar" status="no" details="" size="99208" time="0" location="/home/bartek/.ivy2/cache/org.apache.logging.log4j/log4j-api/jars/log4j-api-2.0-beta4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/logging/log4j/log4j-api/2.0-beta4/log4j-api-2.0-beta4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="2.0-beta3" status="release" pubdate="20121111172219" resolver="sbt-chain" artresolver="sbt-chain" evicted="latest-revision" evicted-reason="" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="7394" time="0" location="/home/bartek/.ivy2/cache/org.apache.logging.log4j/log4j-api/ivy-2.0-beta3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/logging/log4j/log4j-api/2.0-beta3/log4j-api-2.0-beta3.pom"/>
+				<evicted-by rev="2.0-beta4"/>
+				<caller organisation="com.typesafe" name="scalalogging-log4j_2.10" conf="compile, runtime" rev="2.0-beta3" rev-constraint-default="2.0-beta3" rev-constraint-dynamic="2.0-beta3" callerrev="1.0.1"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe" name="scalalogging-log4j_2.10">
+			<revision name="1.0.1" status="release" pubdate="20121223234342" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/typesafehub/scalalogging" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="5">
+				<license name="Apache 2.0 License" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="2854" time="0" location="/home/bartek/.ivy2/cache/com.typesafe/scalalogging-log4j_2.10/ivy-1.0.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/scalalogging-log4j_2.10/1.0.1/scalalogging-log4j_2.10-1.0.1.pom"/>
+				<caller organisation="org.scalanlp" name="breeze-core_2.10" conf="compile, runtime" rev="1.0.1" rev-constraint-default="1.0.1" rev-constraint-dynamic="1.0.1" callerrev="0.4"/>
+				<artifacts>
+					<artifact name="scalalogging-log4j_2.10" type="jar" ext="jar" status="no" details="" size="157049" time="0" location="/home/bartek/.ivy2/cache/com.typesafe/scalalogging-log4j_2.10/jars/scalalogging-log4j_2.10-1.0.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/scalalogging-log4j_2.10/1.0.1/scalalogging-log4j_2.10-1.0.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="net.sf.opencsv" name="opencsv">
+			<revision name="2.3" status="release" pubdate="20110728070018" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://opencsv.sf.net" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="4">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3354" time="0" location="/home/bartek/.ivy2/cache/net.sf.opencsv/opencsv/ivy-2.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/net/sf/opencsv/opencsv/2.3/opencsv-2.3.pom"/>
+				<caller organisation="org.scalanlp" name="breeze-core_2.10" conf="compile, runtime" rev="2.3" rev-constraint-default="2.3" rev-constraint-dynamic="2.3" callerrev="0.4"/>
+				<artifacts>
+					<artifact name="opencsv" type="jar" ext="jar" status="no" details="" size="19827" time="0" location="/home/bartek/.ivy2/cache/net.sf.opencsv/opencsv/jars/opencsv-2.3.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/net/sf/opencsv/opencsv/2.3/opencsv-2.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.thoughtworks.paranamer" name="paranamer">
+			<revision name="2.2" status="release" pubdate="20100102124326" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="3">
+				<license name="Public Domain" url="LICENSE.txt"/>
+				<metadata-artifact status="no" details="" size="4017" time="0" location="/home/bartek/.ivy2/cache/com.thoughtworks.paranamer/paranamer/ivy-2.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer/2.2/paranamer-2.2.pom"/>
+				<caller organisation="org.scalanlp" name="breeze-math_2.10" conf="default, compile, runtime, master" rev="2.2" rev-constraint-default="2.2" rev-constraint-dynamic="2.2" callerrev="0.4"/>
+				<caller organisation="org.scalanlp" name="breeze-core_2.10" conf="compile, runtime" rev="2.2" rev-constraint-default="2.2" rev-constraint-dynamic="2.2" callerrev="0.4"/>
+				<artifacts>
+					<artifact name="paranamer" type="jar" ext="jar" status="no" details="" size="29392" time="0" location="/home/bartek/.ivy2/cache/com.thoughtworks.paranamer/paranamer/jars/paranamer-2.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer/2.2/paranamer-2.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-library">
+			<revision name="2.10.2" status="release" pubdate="20130606200543" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.10.2/" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="0">
+				<license name="BSD-like" url="http://www.scala-lang.org/downloads/license.html          "/>
+				<metadata-artifact status="no" details="" size="2669" time="0" location="/home/bartek/.ivy2/cache/org.scala-lang/scala-library/ivy-2.10.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.10.2/scala-library-2.10.2.pom"/>
+				<caller organisation="default" name="interpolacja_2.10" conf="test, compile, provided, test-internal, runtime, optional" rev="2.10.2" rev-constraint-default="2.10.2" rev-constraint-dynamic="2.10.2" callerrev="0.1"/>
+				<caller organisation="org.scalanlp" name="breeze-math_2.10" conf="default, compile, runtime, master" rev="2.10.2" rev-constraint-default="2.10.2" rev-constraint-dynamic="2.10.2" callerrev="0.4"/>
+				<caller organisation="org.scala-lang" name="scala-reflect" conf="compile, runtime" rev="2.10.2" rev-constraint-default="2.10.2" rev-constraint-dynamic="2.10.2" callerrev="2.10.2"/>
+				<caller organisation="org.scalanlp" name="breeze-core_2.10" conf="compile, runtime" rev="2.10.2" rev-constraint-default="2.10.2" rev-constraint-dynamic="2.10.2" callerrev="0.4"/>
+				<artifacts>
+					<artifact name="scala-library" type="jar" ext="jar" status="no" details="" size="7121818" time="0" location="/home/bartek/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.10.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.10.2/scala-library-2.10.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scalanlp" name="breeze_2.10">
+			<revision name="0.6-SNAPSHOT" error="not found" downloaded="false" searched="false" conf="default(compile)" position="-1">
+				<caller organisation="default" name="interpolacja_2.10" conf="test, compile, provided, test-internal, runtime, optional" rev="0.6-SNAPSHOT" rev-constraint-default="0.6-SNAPSHOT" rev-constraint-dynamic="0.6-SNAPSHOT" callerrev="0.1"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="0.5.2" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="default(compile)" position="-1">
+				<evicted-by rev="0.6-SNAPSHOT"/>
+				<caller organisation="default" name="interpolacja_2.10" conf="test, compile, provided, test-internal, runtime, optional" rev="0.5.2" rev-constraint-default="0.5.2" rev-constraint-dynamic="0.5.2" callerrev="0.1"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>
